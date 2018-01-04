@@ -1,12 +1,17 @@
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: 35px 100px 0;
+	padding: 1rem 5rem 0;
 	position:absolute;
 	width:100%;
 	z-index:1;
 	animation: 1s fadein 0.5s forwards;
-	opacity: 0;
+    opacity: 0;
+    background-color: rgba(88, 157, 158,0.2);
+}
+
+.mobile-header {
+    display: none;
 }
 
 @keyframes fadein {
@@ -18,8 +23,10 @@ header {
 nav {
 	list-style: none;
     display: flex;
+    padding-top: 1rem;
+	flex-wrap:wrap;
     & li {
-        margin: 0 1rem;
+        margin: -0.2rem 1rem;
     }
 }
 
@@ -34,28 +41,60 @@ nav {
         text-shadow: 1px 2px #000;
     }
     & h3 {
-        color: red;
+        color: cadetblue;
+        font-weight: bold
     }
-    & .background-image {
-        width: 100%;
-        overflow: hidden;
+    & .background-slider,
+      .background-slider:after { 
         position: absolute;
-        top: 0;
-        left: 0;
-        & figure {
-            position: relative;
-            width: 500%;
-            margin: 0;
-            padding: 0;
-            font-size: 0;
-            text-align: left;
-            animation: 30s slidy infinite;
-            & img {
-                width: 20%;
-                height: 100vh;
-                float: left;
-                z-index: -1;
-            }
+        width: 100%;
+        height: 100vh;
+        top: 0px;
+        left: 0px;
+        z-index: 0; 
+        list-style-type: none;
+        overflow: hidden;
+    }
+    & .background-slider:after { 
+        content: '';
+        background: transparent repeat top left; 
+    }
+    & .background-slider li:nth-child(1) span { 
+        background-image: url(../../asset/image/runner.jpg) 
+    }
+    & .background-slider li:nth-child(2) span { 
+        background-image: url(../../asset/image/banner-3.jpg);
+        animation-delay: 6s; 
+    }
+    & .background-slider li:nth-child(3) span { 
+        background-image: url(../../asset/image/banner-1.jpg);
+        animation-delay: 12s; 
+    }
+    & .background-slider li:nth-child(4) span { 
+        background-image: url(../../asset/image/build.jpg);
+        animation-delay: 18s; 
+    }
+    & .background-slider li:nth-child(5) span { 
+        background-image: url(../../asset/image/banner-2.jpg);
+        animation-delay: 24s; 
+    }
+    .background-slider li {
+        overflow: hidden;
+        
+        & span { 
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: transparent;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: none;
+            opacity: 0;
+            z-index: 0;
+            animation: imageAnimation 30s linear infinite 0s; 
+            
         }
     }
 }
@@ -76,19 +115,25 @@ nav {
 	}
 }
 
-
-
-
-
-@keyframes slidy { 
-	0%  { left: 0%; }
-	20% { left: 0%; }
-	25% { left: -100%; }
-	45% { left: -100%; }
-	50% { left: -200%; }
-	70% { left: -200%; } 
-	75% { left: -300%; }
-	95% { left: -300%; }
-	100% { left: -400%; } 
+@keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	8% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	17% {
+	    opacity: 1;
+	    transform: scale(1.2);
+	}
+	25% {
+	    opacity: 0;
+	    transform: scale(1.2);
+	}
+	100% { opacity: 0 }
 }
+
 

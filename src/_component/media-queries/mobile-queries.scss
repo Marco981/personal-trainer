@@ -1,0 +1,91 @@
+@media screen and (max-width:500px) {
+
+	header  {
+		display: none;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+    
+    .menu-mobile {
+		position: absolute;
+		right: -30rem;
+		display: block;
+		z-index: 99;
+		background-color: cadetblue;
+		display: none;
+	}
+
+	.menu-visible {
+		display: block;
+		bottom:7rem;
+		right:1.5rem;
+		position: fixed;
+        transition: all 450ms ease-in-out;
+        & li {
+            margin: 1rem;
+        }
+	}
+
+	.icon-ptmenu {
+		display: block;
+		position: fixed;
+	    font-size: 3rem;
+	    color: cadetblue;
+	    padding: 1rem;
+        z-index: 99;
+        bottom: 3rem;
+        right: 1rem;
+	}
+
+	.hero-content-area {
+		padding-top:50%;
+	}
+
+	section {
+		padding: 5rem 2rem;
+	}
+
+	p {
+		margin-bottom: 2rem;
+		font-size: 1.2rem;
+	}
+
+	.bio-text {
+        flex-basis: 80%;
+    }
+
+	.banner {
+		height: 100%;
+	}
+
+
+	.services ul li {
+        padding:0;
+        & img {
+            width: 22rem;
+        }
+	}
+
+	.overlay-left {
+		left: 31%;
+	}
+
+	footer {
+        flex-direction: column-reverse;
+        padding: 2rem;
+        & p {
+            display: none;
+        }
+    }
+
+    .social {
+        padding-bottom: 2rem;
+        text-align: center;
+        & a {
+            font-size: 2.3rem;
+            padding: 1.5rem;
+        }
+    }
+}
