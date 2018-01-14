@@ -27,13 +27,13 @@
 
 
 
-  var scrollLink = $(".scroll");
+var scrollLink = $(".scroll");
 
-  scrollLink.click(function(e){
-    e.preventDefault();
-    $("body,html").animate({
-      scrollTop: $(this.hash).offset().top
-    },1000)
+scrollLink.click(function(e){
+  e.preventDefault();
+  $("body,html").animate({
+    scrollTop: $(this.hash).offset().top
+  },1000)
 });
 var waypoints = $('#about').waypoint({
   handler: function(direction) {

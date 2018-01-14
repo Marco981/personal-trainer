@@ -99,3 +99,17 @@ section {
         padding: 2rem;
     }
 }
+
+.banner-1,
+.banner-2,
+.banner-3,
+.banner-4 {
+	background-size: cover;
+	background-position: center bottom;
+	position: absolute;
+	width: 100%;
+	height: 300%;
+	background-repeat: no-repeat;
+    opacity: 0.4;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
