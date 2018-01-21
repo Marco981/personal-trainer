@@ -13,9 +13,6 @@ $(window).scroll(function() {
 
   if($(window).width()<500) {
       $(".banner-1,.banner-2,.banner-3,.banner-4").css({top: "-222px"});
-      // $(".banner-2").css("top",+150 -(scrollTop *0.2)+"px");
-      // $(".banner-3").css("top",+900 -(scrollTop *0.2)+"px");
-      // $(".banner-4").css("top",+150 -(scrollTop *0.2)+"px");
   }
 });
 
@@ -37,6 +34,7 @@ scrollLink.click(function(e){
 var waypoints = $('#about').waypoint({
   handler: function(direction) {
     $(".about-img").addClass("fadeInLeft")
+    $(".bio-text").addClass("fadeInRight")
     if(direction==="down" && $(window).width()>500) {
       $("header").addClass("sticky");
     } else {

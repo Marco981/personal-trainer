@@ -49,6 +49,7 @@
 	transform: translate(-50%, -50%);
 	opacity:1;
     width: 62%;
+    
     & p {
         position:absolute;
         left: 38%;
@@ -58,6 +59,7 @@
         transform: translate(-50%, -50%);
         font-family: "Quicksand",sans-serif;
         color: whitesmoke;
+        padding-left: .3rem;
     }
 }
 
