@@ -54,7 +54,13 @@
 
 	.bio-text {
         flex-basis: 80%;
-    }
+	}
+	
+	.bio {
+		img {
+		padding:2rem 0;
+		}
+	}
 
 	.banner {
 		height: 100%;

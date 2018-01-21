@@ -6,7 +6,11 @@
     
     nav li {
         margin: -0.2rem 0.9rem;
-    }
+	}
+	
+	.videos {
+		flex-direction: column;
+	}
 
 	.services ul {
 		flex-direction:column;

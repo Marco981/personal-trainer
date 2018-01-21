@@ -18,8 +18,32 @@
         height: 32rem;
         width: auto;
         padding:0.6rem 2rem 2rem 2rem;
+        
     }
 }
 .bio-text {
 	flex-basis: 60%;
+}
+
+.videos {
+    display:flex;
+}
+
+iframe {
+    padding: 2rem;
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 1s normal forwards;
+}
+
+@keyframes fadeInLeft {
+ 0% {
+     opacity: 0;
+     transform: translate(-300px,0)
+ }
+ 100% {
+     opacity: 1;
+     transform: translate(0,0)
+ }
 }

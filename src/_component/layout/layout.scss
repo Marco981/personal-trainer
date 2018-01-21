@@ -23,6 +23,15 @@ h3 {
 	text-shadow: 1px 1px black;
 }
 
+h4 {
+	color: cadetblue;
+	font: normal 1.4rem "Quicksand",sans-serif;
+	
+	span {
+		color: chocolate;
+	}
+}
+
 hr {
 	width:20%;
 	height: 2px;
@@ -42,9 +51,10 @@ a {
 	opacity:0.7;
 	color:white;
 	font-size: 1.2rem;
-	text-shadow: 1px 1px black;
+	// text-shadow: 1px 1px black;
 	&:hover {
 		opacity:1;
+		color: #f58426;
 	}
 	&.btn {
 		border-radius: 5px;
@@ -75,7 +85,7 @@ section {
 	& a {
 		color:cadetblue;
 		&:hover {
-			text-shadow: 1px 1px black;
+			color: #f58426;
 		}
 	}
 }
@@ -90,6 +100,7 @@ section {
 	color:white;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	border-top: 5px solid cadetblue;
 	& span {
 		font-size: 2rem;
 		font-weight: bold;
