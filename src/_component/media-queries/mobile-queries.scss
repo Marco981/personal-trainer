@@ -10,18 +10,21 @@
     
     .menu-mobile {
 		position: absolute;
-		right: -30rem;
+		height: 0px;
+		overflow:hidden;
+		bottom: 6rem;
 		display: block;
 		z-index: 99;
 		background-color: cadetblue;
 		display: none;
-		transition: all 200ms ease-in-out;
+		transition: all 150ms ease-in-out;
 	}
 
 	.menu-visible {
 		display: block;
 		bottom:6rem;
 		right:1.5rem;
+		height: auto;
 		position: fixed;
         transition: all 450ms ease-in-out;
         & li {
@@ -68,6 +71,8 @@
 			flex-basis:100%;
 			img {
 			padding:2rem 0;
+			max-width: 100%;
+			height: auto;
 			}
 
 		}

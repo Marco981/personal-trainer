@@ -21,6 +21,12 @@ $(".icon-menu").on("click",function(){
   $(".menu-mobile").toggleClass("menu-visible");
 })
 
+$(".scroll").on("click",function(){
+  $(".menu-mobile").removeClass("menu-visible");
+  $(".icon-menu").removeClass("horizontal");
+  
+})
+
 
 
 
