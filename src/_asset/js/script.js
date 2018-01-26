@@ -2,7 +2,7 @@ $(window).scroll(function() {
   var scrollTop = $(this).scrollTop();
   $(".banner-1").css("top", -(scrollTop *0.4)+"px");
   if(scrollTop>1200){
-    $(".banner-2").css("top",+450 -(scrollTop *0.4)+"px");
+    $(".banner-2").css("top",+550 -(scrollTop *0.4)+"px");
   } 
   if (scrollTop>2252) {
       $(".banner-3").css("top",+470 -(scrollTop *0.2)+"px");
@@ -16,7 +16,8 @@ $(window).scroll(function() {
   }
 });
 
-$(".icon-ptmenu").on("click",function(){
+$(".icon-menu").on("click",function(){
+  $(this).toggleClass("horizontal");
   $(".menu-mobile").toggleClass("menu-visible");
 })
 

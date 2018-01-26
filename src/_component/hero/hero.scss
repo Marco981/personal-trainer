@@ -22,12 +22,12 @@ header {
 
 .logo {
     display: flex;
+    img {
+        height: 1.4rem;
+        display: inline-block;
+    }
     a {
         padding-top:2px;
-        img {
-            height: 1.4rem;
-            display: inline-block;
-        }
     }
 }
 
